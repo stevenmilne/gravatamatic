@@ -65,7 +65,7 @@ The following single variables are available inside the `{{ gravatamatic:avatar 
 
 ## Single Tag: *quicky*
 
-** Example Tag: **
+**Example Tag:**
 
 	{{ gravatamatic:quicky email="{{ contact_email }}" }}
 
