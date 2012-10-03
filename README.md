@@ -101,6 +101,6 @@ The default option steps in when there isn't a Gravatar available for an email a
     default="http://yoursite.com/yourimage.jpg"
  
 
- ### Variables
+### Variables
 
- This single tag simply returns an img tag.
+This single tag simply returns an img tag.
