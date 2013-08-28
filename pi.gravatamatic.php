@@ -10,11 +10,11 @@ class Plugin_gravatamatic extends Plugin {
  
     public function avatar()
     {
-        $email      = $this->fetch_param('email', null);
+        $email      = $this->fetchParam('email', null);
         $baseurl    = "http://www.gravatar.com/avatar/"; 
-        $size       = $this->fetch_param('size', '80');  // default to 80px - size in pizels up to 2048
-        $rating     = $this->fetch_param('rating', 'g');  // default to all audiences - g / pg / r / x
-        $default    = $this->fetch_param('default', 'mm');  // default to all silhouette - mm / indenticon / monsterid / wavatar / retro or own url
+        $size       = $this->fetchParam('size', '80');  // default to 80px - size in pizels up to 2048
+        $rating     = $this->fetchParam('rating', 'g');  // default to all audiences - g / pg / r / x
+        $default    = $this->fetchParam('default', 'mm');  // default to all silhouette - mm / indenticon / monsterid / wavatar / retro or own url
 
         $hash =   md5( strtolower( trim( $email ) ) ); 
         $options = "?s=".$size."&r=".$rating."&d=".urlencode($default);
@@ -32,11 +32,11 @@ class Plugin_gravatamatic extends Plugin {
  
     public function quicky()
     {
-        $email      = $this->fetch_param('email', null);
+        $email      = $this->fetchParam('email', null);
         $baseurl    = "http://www.gravatar.com/avatar/"; 
-        $size       = $this->fetch_param('size', '80');  // default to 80px - size in pizels up to 2048
-        $rating     = $this->fetch_param('rating', 'g');  // default to all audiences - g / pg / r / x
-        $default    = $this->fetch_param('default', 'mm');  // default to all silhouette - mm / indenticon / monsterid / wavatar / retro or own url
+        $size       = $this->fetchParam('size', '80');  // default to 80px - size in pizels up to 2048
+        $rating     = $this->fetchParam('rating', 'g');  // default to all audiences - g / pg / r / x
+        $default    = $this->fetchParam('default', 'mm');  // default to all silhouette - mm / indenticon / monsterid / wavatar / retro or own url
 
         $hash =   md5( strtolower( trim( $email ) ) ); 
         $options = "?s=".$size."&r=".$rating."&d=".urlencode($default);
